@@ -7,7 +7,7 @@ KWordBlock::KWordBlock()
 
 std::string KWordBlock::Find(std::string input)
 {
-    std::string OutPut = "Sorry. What do you mean?";
+    std::string OutPut = "Execuse?";
     for(int i=0;i<KWordList.size();i++)
     {
         if(KWordList[i].isKeyWord(input))

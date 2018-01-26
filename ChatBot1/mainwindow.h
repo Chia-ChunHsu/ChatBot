@@ -3,7 +3,9 @@
 
 #include <QMainWindow>
 #include <kwordblock.h>
+#include <QDebug>
 #include <QTextCodec>
+#include <iostream>
 namespace Ui {
 class MainWindow;
 }

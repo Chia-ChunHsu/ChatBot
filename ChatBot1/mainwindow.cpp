@@ -1,4 +1,4 @@
-﻿#include "mainwindow.h"
+#include "mainwindow.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -30,5 +30,7 @@ void MainWindow::on_SendButton_clicked()
     ui->ChatBrowser->append(input);
     ui->ChatEdit->clear();
     std::string output = memoryBlock->Find(input.toStdString());
+    std::cout<<output;
+
     ui->ChatBrowser->append(output.c_str());
 }
